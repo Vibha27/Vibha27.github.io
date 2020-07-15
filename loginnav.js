@@ -59,7 +59,7 @@ firebase.auth().onAuthStateChanged(function(user) {
           <a class='dropdown-trigger'  data-target='dropdown2'>Category<i class="material-icons">filter_list</i></a>
           </li>  
             <li><a href="./my_profile.html">Profile<i class="material-icons">person</i></a></li>
-            <li><a href="./index.html">Orders<i class="material-icons">history</i></a></li>
+            <li><a href="./my_order.html">Orders<i class="material-icons">history</i></a></li>
             <li><a href="./index.html">Walle<i class="material-icons">account_balance_wallet</i>t</a></li>
             <li><a href="./cart.html">Cart<i class="material-icons">shopping_cart</i></a></li>
           <!-- Dropdown Button-->
