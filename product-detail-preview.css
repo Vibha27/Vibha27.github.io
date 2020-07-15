@@ -1,0 +1,393 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden !important;
+}
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #1c2224;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ff8c00;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #1c2224;  /* creates padding around scroll thumb */
+}
+.title h1{
+	display:inline-block;	
+}
+.cp{
+    display:inline-block;
+    text-align:right;
+    padding:0;
+    margin:0;
+    /* border: 1px solid gray; */
+    /* float: left; */
+}
+
+.navbar{
+	background-color: #1c2224;
+	height: 65px;
+	padding-left:30px;
+	padding-right: 5px;
+	font-family: 'Roboto', sans-serif;
+}
+#nav-mobile li {
+	padding-right:25px;
+	cursor: pointer;
+}
+#nav-mobile li a:hover{
+	color: #ff8c00 !important;
+	transform: scale(1.1);
+	background-color: rgba(255,255,255,0.1);
+}
+main{
+	margin:0px 0px 20px;
+	padding: 10px 40px;
+	background-color:#fff;
+	color: #000;
+}
+#product-img-cont{
+	padding:50px 30px 10px 5px;
+}
+#img-main{
+	width: 100%;
+	height: 530px;
+}
+.product-details{
+	padding-left: 15px;
+}
+.title-main{
+	color: #ff8c00;
+	font-family: 'MuseoModerno', cursive;
+	font-size: 40px;
+}
+hr{
+	width:600px;
+}
+.product-mrp{
+	font-size: 16px;
+}
+.offer{
+	margin-left:60px;
+	padding:10px;
+	border:1px solid #ff8c00;
+	border-radius: 20px; 
+	background-color: #ff8c00;
+	color: #fff;
+	font-family: 'MuseoModerno', cursive;
+}
+.selling-price{
+	font-size: 18px
+}
+#btn-main{
+	margin-right: 0px;
+	transition: ease;
+}
+#btn-main:hover{
+	transform: scale(0.9);
+}
+.checkpoint{
+	font-family: 'Roboto', sans-serif;
+}
+#progress-bar{
+/* margin-left:16px; */
+margin-right: 0px;
+}
+.bull{
+	border: 2px solid #ff8c00;
+	height: 32px;
+	width: 30px;
+	border-radius: 100%;
+	color: #ff8c00;
+	display: inline-block;
+	position: relative;
+	line-height:20px;
+	text-align:  center;
+	padding-top: 3px;
+	justify-content: space-between;
+		
+}
+#qty-checkpoint{
+	margin-left:0px;
+	margin-bottom: 5px;
+}
+#price-checkpoint{
+	margin-left:0px;
+	margin-bottom: 5px;
+}
+#label-price1, #label-qty1{
+	position: relative;
+	/* left: 95% ; */
+}
+#label-price2, #label-qty2{
+	position: relative;
+	/* left: 92% ; */
+}
+#label-price3, #label-qty3{
+	position: relative;
+	/* left: 88.99% ; */
+}
+#label-price4, #label-qty4{
+	position: relative;
+	/* left: 85% ; */
+}
+#label-price5, #label-qty5{
+	position: relative;
+	/* left: 81% ; */
+}
+.suggestions{
+	display: block;
+	background-color: #f7f7f7;
+	font-family: 'Roboto', sans-serif;
+}
+.suggestions-odd{
+	display: none;
+	background-color: #f7f7f7;
+	font-family: 'Roboto', sans-serif;
+}
+.card{
+	border:1px solid #dadce0;
+	border-radius:10px !important; 
+	margin:5px;
+	padding: 5px 5px 10px 5px;
+	background-color: #fff;
+}
+.img-suggestions{
+	width: 100%;
+	height: 150px;
+}
+.title-offer{
+	font-size: 14px;
+	color: #666666;
+	padding-bottom: 10px;
+}
+.off-label-sugg{
+	border:1px solid #51aa1b;
+	border-radius: 3px; 
+	background-color: #51aa1b;
+	color: #fff;
+	font-family: 'MuseoModerno', cursive;"
+}
+.qty-sugg{
+	color:#999999;
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+.sell-price-sugg{
+	font-size: 14px;
+	margin:3px 0px;
+}
+#btn-sugg{
+	 border:1px solid #51aa1b;
+	 border-radius:20px;
+	 background-color: #fff;
+	 color: #51aa1b;
+}
+.actual-price{
+	font-size: 12px;
+	color:#999999;
+}
+
+/*-----------------Mobile(L)------------*/
+@media only screen and (max-width: 425px) {
+main{
+	margin:0px;
+	padding:0px;
+}
+.product-details{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+hr{
+	width:375px !important;
+}
+#product-img-cont{
+	padding:0px;
+}
+#img-main{
+	height: 340px;
+}
+.title-main{
+	font-size: 30px;
+}
+.product-mrp{
+	font-size: 18px;
+}
+.selling-price{
+	font-size: 20px;
+}
+#progress-bar{
+margin-left:0px;
+margin-right: 0px;
+}
+#qty-checkpoint{
+	margin-left:0px;
+	margin-bottom:0px;
+}
+#price-checkpoint{
+	margin-left:0px;
+	margin-bottom: 0px;
+}
+#checkpoint-num{
+	margin-left:10px;
+}
+.card{
+	margin:1px;
+	padding:3px 2px 3px 2px;
+}
+.img-suggestions{
+	height: 140px;
+}
+.title-offer{
+	font-size: 15px;
+	padding-bottom:8px;
+}
+.qty-sugg{
+	font-size: 13px;
+	padding-bottom: 8px;
+}
+.sell-price-sugg{
+	font-size: 14px;
+	margin:5px 0px;
+}
+.actual-price{
+	font-size: 13px;
+}
+.off-label-sugg{
+	font-size: 11px;
+}
+#btn-sugg{
+	font-size: 11px;
+}
+}
+/*----------Mobile(M)------*/
+@media only screen and (max-width: 375px) {
+.card{
+	margin:1px;
+	padding:0px;
+}
+.img-suggestions{
+	height: 130px;
+}
+#progress-bar{
+margin-left:0px;
+margin-right: 0px;
+}
+#qty-checkpoint{
+	margin-left:0px;
+	margin-bottom:0px;
+}
+#price-checkpoint{
+	margin-left:0px;
+	margin-bottom: 0px;
+}
+.title-offer{
+	font-size: 14px;
+	padding-bottom:8px;
+}
+.product-details{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+hr{
+	width:320px !important;
+}
+.qty-sugg{
+	font-size: 12px;
+	padding-bottom: 9px;
+}
+.sell-price-sugg{
+	font-size: 13px;
+	margin:4px 0px 15px 0px;
+}
+.actual-price{
+	font-size: 12px;
+}
+.off-label-sugg{
+	font-size: 9px;
+}
+#btn-sugg{
+	font-size: 8px;
+}	
+}
+/*------------Mobile(S)--------*/
+@media only screen and (max-width: 320px) {
+.suggestions{
+	display: none;
+}
+.suggestions-odd{
+	display: block;
+}
+.product-details{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+hr{
+	width:280px !important;
+}
+#progress-bar{
+margin-left:0px;
+margin-right: 0px;
+}
+#qty-checkpoint{
+	margin-left:0px;
+	margin-bottom:0px;
+}
+#price-checkpoint{
+	margin-left:0px;
+	margin-bottom: 0px;
+}
+#img-main{
+	height: 320px;
+}
+.off-label-sugg{
+	margin-top:8px;
+	font-size: 12px;
+}
+.img-suggestions{
+	width: 100%;
+	height: 250px;
+}
+.title-main{
+	font-size: 32px;
+}
+.product-mrp{
+	font-size: 14px;
+}
+.selling-price{
+	font-size: 16px
+}
+}
+/*--------------Tablets & small laptops-------------------*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+#img-main{
+	height: 400px;
+}
+.suggestions{
+	display: none;
+}
+.suggestions-odd{
+	display: block;
+}
+.img-suggestions{
+	width: 100%;
+	height: 240px;
+}
+main{
+	margin:0px 0px 10px;
+	padding: 10px 40px;
+}
+#product-img-cont{
+	padding:90px 30px 10px 5px;
+}
+.title-main{
+	font-size: 28px;
+}
+.product-mrp{
+	font-size: 14px;
+}
+.selling-price{
+	font-size: 16px
+}
+}

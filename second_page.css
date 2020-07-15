@@ -1,0 +1,145 @@
+html, body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+/*     background-image: url("img/bgimg.jpg"); */
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment:fixed; 
+    background-size: cover; 
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #1c2224;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff8c00;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #1c2224;  /* creates padding around scroll thumb */
+}
+
+.navbar{
+	background-color: #1c2224;
+	height: 65px;
+	padding-left:30px;
+	padding-right: auto;
+
+}
+
+#nav-mobile li {
+	padding-right:25px;
+	cursor: pointer;
+}
+
+#nav-mobile li a:hover{
+	color: #ff8c00 !important;
+	transform: scale(1.1);
+	background-color: rgba(255,255,255,0.1);
+}
+
+.nav2{
+display: flex;
+justify-content: space-between;
+background-color: #1c2224;
+}
+
+.input-field{
+display: flex;
+flex-grow: 4;
+}
+
+#search_form{
+  display: flex;
+  flex-grow: 4;
+}
+
+#search_form2{
+  display: flex;
+  flex-grow: 4;
+  	height: 100%;
+
+}
+
+
+.nav2 #search2{
+	border: none;
+	margin: 0px;
+	height: 64px;
+	padding-left: 38px;
+}
+
+
+
+.categoryname{
+	text-align: center;
+	color: #fff;
+}
+
+.categoryname h1{
+		font-size: 4vw;
+
+}
+
+.col{
+	float: none;
+	display: inline-block;
+	text-align: initial;	
+}
+
+.card{
+		border-radius:15px !important; 
+}
+
+.card-image{
+/*	background-color: #f7f7f7;
+*/	object-fit: scale-down;
+	height: 250px;
+	border-radius: 15px !important;
+	padding: 10px;
+	max-height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.card-title{
+    color: #ff8c00;
+    font-family: 'MuseoModerno', cursive;
+}
+
+.card-action{
+	border-radius: 15px !important;
+}
+
+.page-footer{
+	background-color: #1c2224 !important;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  .categoryname h1
+  {
+		font-size: 12vw;
+  }
+  #search_form{
+	width: 75%;
+	height: 100%;
+}
+
+}
+
+
+@media only screen and (max-width: 425px) {
+  .categoryname h1
+  {
+		font-size: 12vw;
+  }
+  #search_form{
+	width: 60%;
+	height: 100%;
+}
+
+}

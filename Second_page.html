@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="second_page.css">
+	<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<title>Categories</title>
+</head>
+<body>
+
+	<!-- Navbar -->
+	<div id="nav-baar">
+
+	</div>
+	<div class="row">
+		<nav class="nav2" style="background-color: orange;">
+				<form id="search_form2">
+					<span class="input-field">
+					  <input id="search2" type="search" required >
+					  <label class="label-icon" for="search" id="se"><i class="material-icons"onclick="se()" >search</i></label>
+					</span>
+				</form>
+		</nav>
+	</div>
+	<!-- Category -->
+	<div class="categoryname"><p><h1 id="Catname"></h1></p></div>
+
+	<!-- Product Cards -->
+	<div class="row" id="prod">
+
+	    
+
+    </div>
+
+
+
+
+	<footer class="page-footer center">
+        <div class="container">
+            <div class="row">
+            	<div class="col l6 s12">
+                	<h5 class="white-text">Frood</h5>
+                	<p class="grey-text text-lighten-4">An Start-Up for inspiring sells of fruits and veggie on Online Platform for Bangalore cities.</p>
+                </div>
+              	<div class="col l4 offset-l2 s12">
+                	<h5 class="white-text">Your Section</h5>
+                	<ul>
+		                <li><a class="grey-text text-lighten-3" href="#!">Your Wallet</a></li>
+                  		<li><a class="grey-text text-lighten-3" href="#!">Your Profile</a></li>
+		                <li><a class="grey-text text-lighten-3" href="#!">Your Orders</a></li>
+		                <li><a class="grey-text text-lighten-3" href="#!">Your Account</a></li>
+                	</ul>
+              	</div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            	© 2020 Copyright Text
+	            	<a class="grey-text text-lighten-4 right" href="#!">Subscribe With Us!</a>
+	            </div>
+	        </div>
+    </footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-storage.js"></script>
+   
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+	<script src="config.js"></script>
+	<script src="nav.js"></script>
+	<script src="Second_page.js"></script>
+	<script type="text/javascript">
+	
+	$(document).ready(function(){
+	  $("#search2").on("keyup", function() {
+		var value = $(this).val().toLowerCase();
+		$(".card-title").filter(function() {
+		  $(this).parent().parent().parent().toggle($(this).text().toLowerCase().indexOf(value) > -1)
+		});
+	  });
+	});
+	function se(){
+		$("#search2").select();
+	}
+		
+	
+
+	</script>
+</body>
+</html>
