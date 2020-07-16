@@ -38,7 +38,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                  <li><a href="./index.html" class="tooltipped " data-position="bottom" data-tooltip="Home"><i class="large material-icons">home</i></a></li>
                  <li><a  class="tooltipped dropdown-trigger" data-position="bottom" data-tooltip="Category"  data-target='dropdown1'><i class="large material-icons">filter_list</i></a></li>
                         <li><a href="./my_profile.html" class="tooltipped" data-position="bottom" data-tooltip="Profile"><i class="large material-icons">person</i></a></li>
-                        <li><a href="./index.html" class="tooltipped" data-position="bottom" data-tooltip="Orders"><i class="large material-icons">history</i></a></li>
+                        <li><a href="./my_order.html.html" class="tooltipped" data-position="bottom" data-tooltip="Orders"><i class="large material-icons">history</i></a></li>
                         <li><a href="./index.html" class="tooltipped" data-position="bottom" data-tooltip="Wallet"><i class="large material-icons">account_balance_wallet</i></a></li>
                         <li><a href="./cart.html" class="tooltipped" data-position="bottom" data-tooltip="Cart"><i class="large material-icons">shopping_cart</i></a></li>
                         <!-- Dropdown Button-->
