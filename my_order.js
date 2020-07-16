@@ -4,7 +4,15 @@ const uuid = localStorage.getItem('uuid');
 
 function onLoad(){
 
-    users_db.where("uuid", "==", uuid)
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (!user) {
+            // No user is signed in.
+            console.log("not signed in");
+              window.location.assign('./signin.html');
+          
+        }
+        else{
+            users_db.where("uuid", "==", uuid)
     .get()
     .then(function(querySnapshot) {
         querySnapshot.forEach(function(doc) {
@@ -33,6 +41,8 @@ function onLoad(){
         console.log("Error getting documents: ", error);
     });
 
+        }
+    })
 }
 
 
